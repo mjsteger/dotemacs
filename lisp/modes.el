@@ -1,5 +1,3 @@
-(normal-top-level-add-subdirs-to-load-path)
-
 (require-all '(
 	       load-ido ; Loads ido-mode and various tweaks for it
 	       load-globals ; Load all the global always-on modes
@@ -18,9 +16,3 @@
 	       load-minor-modes ; Minor modes with very few tweaks
 	       load-major-modes ; Major modes with very few tweaks
 	       ))
-
-(provide 'load-modes)
-
-
-
-

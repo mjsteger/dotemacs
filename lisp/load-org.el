@@ -2,16 +2,15 @@
 (setq org-startup-indented t)
 (require 'org-install)
 
-(defvar home "/Users/michaelsteger/")
+(defvar home (expand-file-name "~/"))
+
 (setq org-log-done t)
-(setq org-agenda-files (list (concat home "/org/devOpsTwilio.org")
-                             (concat home "/org/school.org")
+
+(setq org-agenda-files (list (concat home "/org/school.org")
                              (concat home "/org/home.org")
-			     (concat home "/org/test.org")
 			     (concat home "/org/gtd.org")
 			     (concat home "/org/google.org")
 			     (concat home "/org/work.org")
-			     (concat home "/org/intern.twilio.org")
 			     (concat home "/org/refile.org")
 			     ))
 
@@ -20,16 +19,12 @@
       '(
 	("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
 	 "* TODO %?\n  %i\n ")
-	("w" "Devops" entry (file+headline "~/org/devOpsTwilio.org" "Tasks")
-	 "* TODO %?\n  %i\n ")
 	("n" "Note" entry (file "~/org/refile.org")
 	 "* %? :NOTE:\n%U\\n  %i" :clock-in t :clock-resume t)
 	("a" "Interesting" entry (file "~/national/interesting.org")
 	 "* %? :NOTE:\n%U\\n  %i" :clock-in t :clock-resume t)
 	("e" "Emacs" entry (file "~/org/emacs.org")
 	 "* TODO %?\n  %i\n " )
-	("i" "Intern" entry (file+headline "~/org/intern.twilio.org" "Intern")
-	 "* TODO %?\n %i\n")
 	("h" "Home" entry (file+headline "~/org/home.org" "Tasks")
 	 "* TODO %?\n  %i\n ")
 	("s" "School" entry (file+headline "~/org/school.org" "Tasks")

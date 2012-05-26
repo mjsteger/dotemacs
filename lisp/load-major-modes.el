@@ -1,7 +1,8 @@
 (require-all '(
 	       haml-mode ; Major mode for haml
 	       markdown-mode ; Major mode to edit markdown
-	       js2-mode
+	       js2-mode ; Mode for interacting with javascript
+	       dired+ ; Better dired, integrates with bookmark+
 	       ))
 
 (setq auto-mode-alist

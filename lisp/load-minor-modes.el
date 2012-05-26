@@ -5,8 +5,10 @@
 	       jump-char ; Allows jumping ahead characters, shortcut for C-s
 	       magit ; Allows for easy interaction with git in emacs
 	       projectile ; Project management in emacs
-	       fill-column-indicator
-	       popup-kill-ring
+	       fill-column-indicator ; Little blue line to let you see 80 chars
+	       popup-kill-ring ; Allows easy traversal of the kill-ring
+	       expand-region ; Expands by semantic region
+	       flymake ; On the fly syntax checking
 	       ))
 
 (rvm-use-default)

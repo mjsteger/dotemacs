@@ -2,6 +2,3 @@
 ;; in it is quite nice
 (setq display-time-day-and-date t)
 (display-time)
-
-
-(provide 'modeline)

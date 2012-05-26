@@ -58,10 +58,6 @@
 ;; (add-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 ;; (add-hook 'emacs-lisp-mode-hook 'prelude-turn-on-flyspell)
 
-(require 'expand-region)
-
-(require 'dired+)
-
 (defun my-auto-tex-parameters ()
       "Automatically select the tex packages to include."
       ;; default packages for ordinary latex or pdflatex export
