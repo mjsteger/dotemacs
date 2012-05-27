@@ -9,8 +9,8 @@
 	       load-compile ; mode-compile does smart compiling based on buffer
 	       load-buffer ; Load my ibuffer customizations and so forth
 	       load-languages ; Provides language tweaks for emacs.
-	       load-ecb ; Tweaks ecb's semantic sources and loads it
 	       load-personal ; Loads all the stuff I've personally written
+	       load-ecb ; Tweaks ecb's semantic sources and loads it
 	       load-emacs-tweaks ; Smallish tweaks to emacs
 	       load-bookmark ; Set up bookmark+ and related utilities
 	       load-markdown ; Set up special editing for markdown
@@ -18,4 +18,5 @@
 	       load-major-modes ; Major modes with very few tweaks
 	       load-term ; Multiple terminals!
 	       load-fci ; Little blue line to let you see 80 chars
+	       load-yasnippet ; Templating system in emacs!
 	       ))
