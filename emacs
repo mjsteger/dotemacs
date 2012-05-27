@@ -12,9 +12,11 @@
 ; Add all the subdirectories of the this dir
 (normal-top-level-add-subdirs-to-load-path)
 
-(load-library "ekeys") ;; my key bindings and some aliases
-(load-library "efuncs") ;; a bunch of my own utility functions
-(load-library "modes") ;; configuration for 100-odd emacs modes
+(require-all '(
+	       ekeys ;; my key bindings and some aliases
+	       efuncs ;; a bunch of my own utility functions
+	       modes ;; configuration for 100-odd emacs modes
+	       ))
 
 (when (file-exists-p "~/.custom")
   (load-library "~/.custom"))
