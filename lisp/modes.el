@@ -13,6 +13,9 @@
 	       load-personal ; Loads all the stuff I've personally written
 	       load-emacs-tweaks ; Smallish tweaks to emacs
 	       load-bookmark ; Set up bookmark+ and related utilities
+	       load-markdown ; Set up special editing for markdown
 	       load-minor-modes ; Minor modes with very few tweaks
 	       load-major-modes ; Major modes with very few tweaks
+	       load-term ; Multiple terminals!
+	       load-fci ; Little blue line to let you see 80 chars
 	       ))

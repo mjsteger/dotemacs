@@ -1,5 +1,6 @@
 (require-all '(eldoc-extension ; Alters the mode-line in emacs-lisp-mode
 	       volatile-highlights ; Highlights some changes, like undo's
+	       popup-kill-ring ; Allows easy traversal of the kill-ring
 	       ))
 
 ; Tweaks to how emacs works that are too simple to deserve their own mode
@@ -18,3 +19,4 @@
 
 (volatile-highlights-mode t)
 
+(setq popup-kill-ring-interactive-insert t)
