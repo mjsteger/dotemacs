@@ -1,7 +1,7 @@
 (require-all '(
 	       load-ido ; Loads ido-mode and various tweaks for it
 	       load-globals ; Load all the global always-on modes
-	       load-modeline ; Reconjigger the modeline to my liking
+
 	       load-colors ; Set up  my color theme
 	       load-org ; Set up my org-mode files and tweaks
 	       load-autocomplete ; Set up autocompletion based on dabbrev
@@ -19,4 +19,5 @@
 	       load-term ; Multiple terminals!
 	       load-fci ; Little blue line to let you see 80 chars
 	       load-yasnippet ; Templating system in emacs!
+	       load-modeline ; Reconjigger the modeline to my liking
 	       ))

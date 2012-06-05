@@ -64,4 +64,4 @@
 (global-set-key [(shift meta n)] 'jump-char-backward)
 (global-set-key (kbd "M-o") 'zap-to-char)
 (global-set-key (kbd "C-c t") 'fci-mode)
-(global-set-key (kbd "C-/") 'yas-expand)
+

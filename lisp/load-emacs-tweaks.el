@@ -3,11 +3,7 @@
 	       popup-kill-ring ; Allows easy traversal of the kill-ring
 	       ))
 
-; Tweaks to how emacs works that are too simple to deserve their own mode
-(add-hook 'find-file-hook
-	  '(lambda ()
-	     (set-fill-column 80)))
-
+; Tweaks to how emacs works that are too simple to deserve their own modes
 (setq
    backup-by-copying t      ; don't clobber symlinks
    backup-directory-alist
