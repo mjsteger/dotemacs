@@ -1,15 +1,9 @@
-(setq modeline-classic nil) ; Change to alter the appearance of the modeline
-
-(if modeline-classic
-    (set-modeline-classic)
-  (set-modeline-new)
-  )
+(setq modeline-classic t) ; Change to alter the appearance of the modeline
 
 (defun set-modeline-new ()
   (require 'powerline) ; Cool change to the mode line
 
   (setq powerline-arrow-shape 'arrow14)
-
   (custom-set-faces
    '(mode-line ((t (:foreground "#030303" :background "#A5D44E" :box nil))))
    '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))))
@@ -72,5 +66,11 @@
 		 ;; minor-mode-alist  ;; list of minor modes
 		 "%-" ;; fill with '-'
 		 )))
+
+
+(if modeline-classic
+    (set-modeline-classic)
+  (set-modeline-new)
+  )
 
 
