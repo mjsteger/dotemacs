@@ -65,3 +65,5 @@
 (global-set-key (kbd "M-o") 'zap-to-char)
 (global-set-key (kbd "C-c t") 'fci-mode)
 
+(global-set-key (kbd "M-[") 'winner-undo)
+(global-set-key (kbd "M-]") 'winner-redo)
