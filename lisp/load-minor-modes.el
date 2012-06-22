@@ -6,12 +6,11 @@
 	       projectile ; Project management in emacs
 	       expand-region ; Expands by semantic region
 	       flymake ; On the fly syntax checking
-	       winner-mode ; Allow you go back and forward in buffer setups
 	       ))
 
 (rvm-use-default)
 
+(winner-mode) ; Allow you go back and forward in buffer setups
+
 (projectile-global-mode) ;; to enable in all buffers
 (setq projectile-enable-caching t)
-
-
