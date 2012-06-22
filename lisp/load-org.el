@@ -216,3 +216,5 @@
    ))
 
 
+
+(set-face-underline-p 'org-link t) ; Underline links in org-mode, please
