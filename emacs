@@ -22,3 +22,6 @@
   (load-library "~/.custom"))
 
 (server-start)
+
+(when at-amazon
+      (require 'amazon-modes))
