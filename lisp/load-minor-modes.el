@@ -6,6 +6,7 @@
 	       projectile ; Project management in emacs
 	       expand-region ; Expands by semantic region
 	       flymake ; On the fly syntax checking
+	       rspec-mode ; Better editing for rspec
 	       ))
 
 (rvm-use-default)
