@@ -1,3 +1,15 @@
 [submodule "site-lisp/powerline"]
 	path = site-lisp/powerline
 	url = https://github.com/jonathanchu/emacs-powerline.git
+[submodule "site-lisp/emacs-quickrun"]
+	path = site-lisp/emacs-quickrun
+	url = https://github.com/syohex/emacs-quickrun.git
+[submodule "site-lisp/rspec-mode"]
+	path = site-lisp/rspec-mode
+	url = https://github.com/pezra/rspec-mode.git
+[submodule "site-lisp/swank-js"]
+	path = site-lisp/swank-js
+	url = https://github.com/swank-js/swank-js.git
+[submodule "site-lisp/slime-js"]
+	path = site-lisp/slime-js
+	url = https://github.com/Gozala/slime-js.git
