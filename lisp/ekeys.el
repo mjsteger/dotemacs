@@ -67,3 +67,5 @@
 
 (global-set-key (kbd "M-[") 'winner-undo)
 (global-set-key (kbd "M-]") 'winner-redo)
+
+(global-set-key (kbd "M-e") 'yas/expand)
