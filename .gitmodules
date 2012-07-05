@@ -1,6 +1,27 @@
 [submodule "site-lisp/powerline"]
 	path = site-lisp/powerline
 	url = https://github.com/jonathanchu/emacs-powerline.git
+[submodule "site-lisp/magit"]
+	path = site-lisp/magit
+	url = https://github.com/magit/magit.git
+[submodule "site-lisp/markdown-mode"]
+	path = site-lisp/markdown-mode
+	url = http://jblevins.org/git/markdown-mode.git
+[submodule "site-lisp/rvm"]
+	path = site-lisp/rvm
+	url = https://github.com/senny/rvm.el.git
+[submodule "site-lisp/helm"]
+	path = site-lisp/helm
+	url = https://github.com/emacs-helm/helm.git
+[submodule "site-lisp/haml-mode"]
+	path = site-lisp/haml-mode
+	url = https://github.com/nex3/haml-mode.git
+[submodule "site-lisp/find-things-fast"]
+	path = site-lisp/find-things-fast
+	url = https://github.com/eglaysher/find-things-fast.git
+[submodule "site-lisp/expand-region"]
+	path = site-lisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
 [submodule "site-lisp/emacs-quickrun"]
 	path = site-lisp/emacs-quickrun
 	url = https://github.com/syohex/emacs-quickrun.git

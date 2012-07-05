@@ -42,7 +42,7 @@
 
 (setq show-paren-style 'parenthesis)
 
-; (global-set-key (kbd "<return>") 'newline-and-indent)
+                                        ; (global-set-key (kbd "<return>") 'newline-and-indent)
 
 (setq ispell-program-name "aspell" ; use aspell instead of ispell
       ispell-extra-args '("--sug-mode=ultra"))
@@ -59,10 +59,10 @@
 ;; (add-hook 'emacs-lisp-mode-hook 'prelude-turn-on-flyspell)
 
 (defun my-auto-tex-parameters ()
-      "Automatically select the tex packages to include."
-      ;; default packages for ordinary latex or pdflatex export
-      (setq org-export-latex-default-packages-alist
-	    '(("" "graphicx" t))))
+  "Automatically select the tex packages to include."
+  ;; default packages for ordinary latex or pdflatex export
+  (setq org-export-latex-default-packages-alist
+        '(("" "graphicx" t))))
 
 (defun my-auto-tex-header ()
   (setq org-export-latex-header
@@ -73,3 +73,6 @@
 
 (my-auto-tex-header)
 (my-auto-tex-parameters)
+
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
