@@ -115,6 +115,10 @@
   ;(reopen-file (concat (file-name-sans-extension (buffer-file-name)) ".pdf")))
   ;(watch-buffer-elisp "markdown-export-and-view"))
 
+(defun watch-buffer-markdown-online ()
+  (interactive)
+  (watch-buffer-elisp "markdown-export-and-view"))
+
 (defun google ()
   "Googles a query or region if any."
   (interactive)
