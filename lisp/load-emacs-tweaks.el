@@ -1,6 +1,7 @@
 (require-all '(eldoc-extension ; Alters the mode-line in emacs-lisp-mode
 	       volatile-highlights ; Highlights some changes, like undo's
 	       popup-kill-ring ; Allows easy traversal of the kill-ring
+	       package
 	       ))
 
 ; Tweaks to how emacs works that are too simple to deserve their own modes
@@ -12,6 +13,10 @@
    kept-new-versions 6
    kept-old-versions 2
    version-control t)       ; use versioned backups
+
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(package-initialize)
 
 (volatile-highlights-mode t)
 
