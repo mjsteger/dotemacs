@@ -19,5 +19,7 @@
 	       load-fci ; Little blue line to let you see 80 chars
 	       load-yasnippet ; Templating system in emacs!
 	       load-modeline ; Reconjigger the modeline to my liking
-	       load-moz
+	       ;load-moz ; Repl with mozilla
+	       load-eclim ; Emacs-eclipse cooperation !!!
 	       ))
+
