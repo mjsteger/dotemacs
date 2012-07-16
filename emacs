@@ -23,5 +23,5 @@
 
 (server-start)
 
-(when at-amazon
-      (require 'amazon-modes))
+;; (when (and (boundp 'at-amazon) at-amazon)
+;;       (require 'amazon-modes))

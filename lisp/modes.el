@@ -20,6 +20,5 @@
 	       load-yasnippet ; Templating system in emacs!
 	       load-modeline ; Reconjigger the modeline to my liking
 	       ;load-moz ; Repl with mozilla
-	       load-eclim ; Emacs-eclipse cooperation !!!
+	       ;load-eclim ; Emacs-eclipse cooperation !!!
 	       ))
-

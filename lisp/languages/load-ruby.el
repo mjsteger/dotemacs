@@ -3,15 +3,18 @@
 (setq auto-mode-alist  (cons '(".rb$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist  (cons '(".rhtml$" . html-mode) auto-mode-alist))
 
+(require 'rsense)
+(setq rsense-home (expand-file-name "~/dotemacs/site-lisp/rsense-0.3"))
+(add-to-list 'load-path (concat rsense-home "/etc"))
+
 (add-hook 'ruby-mode-hook
           (lambda ()
 	    (ruby-end-mode)
-            ;(add-to-list 'ac-sources 'ac-source-rsense-method)
-            ;(add-to-list 'ac-sources 'ac-source-rsense-constant)
+        (setq ac-sources '(ac-source-rsense-constant ac-source-rsense-method ac-source-yasnippet ac-source-abbrev))
 	    ))
 
 ;(define-key ruby-mode-map (kbd "<return>") 'newline-and-indent)
-
+(define-key ruby-mode-map (kbd "M-.") 'rsense-jump-to-definition)
 (autoload 'run-ruby "inf-ruby"
   "Run an inferior Ruby process")
 
@@ -37,4 +40,3 @@
 	  )))
 
 (define-key ruby-mode-map (kbd "C-c h") 'look-up-ruby-function-at-point)
-
