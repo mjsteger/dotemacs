@@ -1,0 +1,560 @@
+\input texinfo   @c -*-texinfo-*-
+@c %**start of header
+@setfilename #ARGF.html#
+
+@itemize @bullet
+
+
+@item
+Home
+
+@item
+Core
+
+@item
+Std-lib
+
+@item
+Downloads
+
+@item
+  
+@end itemize
+@settitle In Files
+@c %**end of header
+
+@node Top
+
+
+@itemize @bullet
+
+
+@item
+io.c
+@end itemize
+@settitle Parent
+@c %**end of header
+
+@node Top
+
+
+
+Object@settitle Methods
+@c %**end of header
+
+@node Top
+
+
+@itemize @bullet
+
+
+@item
+#argv
+
+@item
+#binmode
+
+@item
+#binmode?
+
+@item
+#bytes
+
+@item
+#chars
+
+@item
+#close
+
+@item
+#closed?
+
+@item
+#each
+
+@item
+#each_byte
+
+@item
+#each_char
+
+@item
+#each_line
+
+@item
+#eof
+
+@item
+#eof?
+
+@item
+#external_encoding
+
+@item
+#file
+
+@item
+#filename
+
+@item
+#fileno
+
+@item
+#getbyte
+
+@item
+#getc
+
+@item
+#gets
+
+@item
+#inplace_mode
+
+@item
+#inplace_mode=
+
+@item
+#internal_encoding
+
+@item
+#lineno
+
+@item
+#lineno=
+
+@item
+#lines
+
+@item
+#path
+
+@item
+#pos
+
+@item
+#pos=
+
+@item
+#read
+
+@item
+#readbyte
+
+@item
+#readchar
+
+@item
+#readline
+
+@item
+#readlines
+
+@item
+#readpartial
+
+@item
+#rewind
+
+@item
+#seek
+
+@item
+#set_encoding
+
+@item
+#skip
+
+@item
+#tell
+
+@item
+#to_a
+
+@item
+#to_i
+
+@item
+#to_io
+
+@item
+#to_s
+@end itemize
+@settitle Included Modules
+@c %**end of header
+
+@node Top
+
+
+@itemize @bullet
+
+
+@item
+Enumerable
+@end itemize
+@settitle Class/Module Index 
+@c %**end of header
+
+@node Top
+
+Quicksearch
+@itemize @bullet
+
+
+@item
+Encoding
+
+@item
+Encoding::CompatibilityError
+
+@item
+Encoding::Converter
+
+@item
+Encoding::ConverterNotFoundError
+
+@item
+Encoding::InvalidByteSequenceError
+
+@item
+Encoding::UndefinedConversionError
+
+@item
+Process
+
+@item
+Process::GID
+
+@item
+Process::Status
+
+@item
+Process::Sys
+
+@item
+Process::UID
+
+@item
+Enumerator
+
+@item
+Enumerator::Generator
+
+@item
+Enumerator::Yielder
+
+@item
+File
+
+@item
+File::Constants
+
+@item
+File::Stat
+
+@item
+IO
+
+@item
+IO::WaitReadable
+
+@item
+IO::WaitWritable
+
+@item
+RubyVM
+
+@item
+RubyVM::Env
+
+@item
+RubyVM::InstructionSequence
+
+@item
+GC
+
+@item
+GC::Profiler
+
+@item
+Math
+
+@item
+Math::DomainError
+
+@item
+NameError
+
+@item
+NameError::message
+
+@item
+ARGF
+
+@item
+ArgumentError
+
+@item
+Array
+
+@item
+BasicObject
+
+@item
+Bignum
+
+@item
+Binding
+
+@item
+Class
+
+@item
+Comparable
+
+@item
+Complex
+
+@item
+Continuation
+
+@item
+Data
+
+@item
+Dir
+
+@item
+EOFError
+
+@item
+EncodingError
+
+@item
+Enumerable
+
+@item
+Errno
+
+@item
+Exception
+
+@item
+FalseClass
+
+@item
+Fiber
+
+@item
+FiberError
+
+@item
+FileTest
+
+@item
+Fixnum
+
+@item
+Float
+
+@item
+FloatDomainError
+
+@item
+Hash
+
+@item
+IOError
+
+@item
+IndexError
+
+@item
+Integer
+
+@item
+Interrupt
+
+@item
+Kernel
+
+@item
+KeyError
+
+@item
+LoadError
+
+@item
+LocalJumpError
+
+@item
+Marshal
+
+@item
+MatchData
+
+@item
+Method
+
+@item
+Module
+
+@item
+Mutex
+
+@item
+NilClass
+
+@item
+NoMemoryError
+
+@item
+NoMethodError
+
+@item
+NotImplementedError
+
+@item
+Numeric
+
+@item
+Object
+
+@item
+ObjectSpace
+
+@item
+Proc
+
+@item
+Random
+
+@item
+Range
+
+@item
+RangeError
+
+@item
+Rational
+
+@item
+Regexp
+
+@item
+RegexpError
+
+@item
+RuntimeError
+
+@item
+ScriptError
+
+@item
+SecurityError
+
+@item
+Signal
+
+@item
+SignalException
+
+@item
+StandardError
+
+@item
+StopIteration
+
+@item
+String
+
+@item
+Struct
+
+@item
+Symbol
+
+@item
+SyntaxError
+
+@item
+SystemCallError
+
+@item
+SystemExit
+
+@item
+SystemStackError
+
+@item
+Thread
+
+@item
+ThreadError
+
+@item
+ThreadGroup
+
+@item
+Time
+
+@item
+TrueClass
+
+@item
+TypeError
+
+@item
+UnboundMethod
+
+@item
+ZeroDivisionError
+
+@item
+fatal
+@end itemize
+No matching classes.@settitle ARGF
+@c %**end of header
+
+@node Top
+
+
+
+@code{ARGF} is a stream designed for use in scripts that process files given as command-line arguments, or passed in via STDIN.
+
+The arguments passed to your script are stored in the @code{ARGV} Array, one argument per element. @code{ARGF} assumes that any arguments that arenât filenames have been removed from @code{ARGV}. For example:
+@example$ ruby argf.rb --verbose file1 file2
+
+ARGV  #=> ["--verbose", "file1", "file2"]
+option = ARGV.shift #=> "--verbose"
+ARGV  #=> ["file1", "file2"]@end example
+
+
+You can now use @code{ARGF} to work with a concatenation of each of these named files. For instance, @code{ARGF.read} will return the contents of file1 followed by the contents of file2.
+
+After a file in @code{ARGV} has been read, @code{ARGF} removes it from the Array. Thus, after all files have been read @code{ARGV} will be empty.
+
+You can manipulate @code{ARGV} yourself to control what @code{ARGF} operates on. If you remove a file from @code{ARGV}, it is ignored by @code{ARGF}; if you add files to @code{ARGV}, they are treated as if they were named on the command line. For example:
+@exampleARGV.replace ["file1"]
+ARGF.readlines # Returns the contents of file1 as an Array
+ARGV           #=> []
+ARGV.replace ["file2", "file3"]
+ARGF.read      # Returns the contents of file2 and file3@end example
+
+
+If @code{ARGV} is empty, @code{ARGF} acts as if it contained STDIN, i.e. the data piped to your script. For example:
+@example$ echo "glark" | ruby -e 'p ARGF.read'
+"glark\n"@end example
+@settitle Public Instance Methods
+@c %**end of header
+
+@node Top
+
+argv → ARGV click to toggle source
+
+Returns the @code{ARGV} array, which contains the arguments passed to your script, one per element.
+
+For example:
+@example$ ruby argf.rb -v glark.txt
+
+ARGF.argv   #=> ["-v", "glark.txt"]@end example

@@ -34,3 +34,6 @@
 [submodule "site-lisp/slime-js"]
 	path = site-lisp/slime-js
 	url = https://github.com/Gozala/slime-js.git
+[submodule "lisp/languages/ruby-end"]
+	path = lisp/languages/ruby-end
+	url = https://github.com/rejeep/ruby-end.git

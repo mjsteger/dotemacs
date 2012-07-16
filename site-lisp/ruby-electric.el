@@ -149,7 +149,7 @@ after appropriate keywords."
 
 (defun ruby-electric-setup-keymap()
   (define-key ruby-mode-map (read-kbd-macro "<return>") 'ruby-electric-return)
-  (define-key ruby-mode-map " " 'ruby-electric-space)
+  ;(define-key ruby-mode-map " " 'ruby-electric-space)
   (define-key ruby-mode-map "|" 'ruby-electric-bar))
 
 (defun ruby-electric-space (arg)

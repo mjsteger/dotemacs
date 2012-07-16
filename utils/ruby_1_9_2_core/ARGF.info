@@ -1,0 +1,558 @@
+This is ARGF.info, produced by makeinfo version 4.8 from ARGF.texinfo.
+
+   * Home
+
+   * Core
+
+   * Std-lib
+
+   * Downloads
+
+   *  &#160;&#160;
+
+
+0.0.1 Home (index.html)
+-----------------------
+
+Classes (index.html#classes)           Methods (index.html#methods)
+
+0.0.2 In Files
+--------------
+
+   * io.c (io_c.html?TB_iframe=true&amp;height=550&amp;width=785)
+
+
+0.0.3 Parent
+------------
+
+Object (Object.html)
+
+0.0.4 Methods
+-------------
+
+   * #argv (#method-i-argv)
+
+   * #binmode (#method-i-binmode)
+
+   * #binmode? (#method-i-binmode-3F)
+
+   * #bytes (#method-i-bytes)
+
+   * #chars (#method-i-chars)
+
+   * #close (#method-i-close)
+
+   * #closed? (#method-i-closed-3F)
+
+   * #each (#method-i-each)
+
+   * #each_byte (#method-i-each_byte)
+
+   * #each_char (#method-i-each_char)
+
+   * #each_line (#method-i-each_line)
+
+   * #eof (#method-i-eof)
+
+   * #eof? (#method-i-eof-3F)
+
+   * #external_encoding (#method-i-external_encoding)
+
+   * #file (#method-i-file)
+
+   * #filename (#method-i-filename)
+
+   * #fileno (#method-i-fileno)
+
+   * #getbyte (#method-i-getbyte)
+
+   * #getc (#method-i-getc)
+
+   * #gets (#method-i-gets)
+
+   * #inplace_mode (#method-i-inplace_mode)
+
+   * #inplace_mode= (#method-i-inplace_mode-3D)
+
+   * #internal_encoding (#method-i-internal_encoding)
+
+   * #lineno (#method-i-lineno)
+
+   * #lineno= (#method-i-lineno-3D)
+
+   * #lines (#method-i-lines)
+
+   * #path (#method-i-path)
+
+   * #pos (#method-i-pos)
+
+   * #pos= (#method-i-pos-3D)
+
+   * #read (#method-i-read)
+
+   * #readbyte (#method-i-readbyte)
+
+   * #readchar (#method-i-readchar)
+
+   * #readline (#method-i-readline)
+
+   * #readlines (#method-i-readlines)
+
+   * #readpartial (#method-i-readpartial)
+
+   * #rewind (#method-i-rewind)
+
+   * #seek (#method-i-seek)
+
+   * #set_encoding (#method-i-set_encoding)
+
+   * #skip (#method-i-skip)
+
+   * #tell (#method-i-tell)
+
+   * #to_a (#method-i-to_a)
+
+   * #to_i (#method-i-to_i)
+
+   * #to_io (#method-i-to_io)
+
+   * #to_s (#method-i-to_s)
+
+
+0.0.5 Included Modules
+----------------------
+
+   * Enumerable (Enumerable.html)
+
+
+0.0.6 Class/Module Index
+------------------------
+
+Quicksearch
+
+   * Encoding (Encoding.html)
+
+   * Encoding::CompatibilityError (Encoding/CompatibilityError.html)
+
+   * Encoding::Converter (Encoding/Converter.html)
+
+   * Encoding::ConverterNotFoundError
+     (Encoding/ConverterNotFoundError.html)
+
+   * Encoding::InvalidByteSequenceError
+     (Encoding/InvalidByteSequenceError.html)
+
+   * Encoding::UndefinedConversionError
+     (Encoding/UndefinedConversionError.html)
+
+   * Process (Process.html)
+
+   * Process::GID (Process/GID.html)
+
+   * Process::Status (Process/Status.html)
+
+   * Process::Sys (Process/Sys.html)
+
+   * Process::UID (Process/UID.html)
+
+   * Enumerator (Enumerator.html)
+
+   * Enumerator::Generator (Enumerator/Generator.html)
+
+   * Enumerator::Yielder (Enumerator/Yielder.html)
+
+   * File (File.html)
+
+   * File::Constants (File/Constants.html)
+
+   * File::Stat (File/Stat.html)
+
+   * IO (IO.html)
+
+   * IO::WaitReadable (IO/WaitReadable.html)
+
+   * IO::WaitWritable (IO/WaitWritable.html)
+
+   * RubyVM (RubyVM.html)
+
+   * RubyVM::Env (RubyVM/Env.html)
+
+   * RubyVM::InstructionSequence (RubyVM/InstructionSequence.html)
+
+   * GC (GC.html)
+
+   * GC::Profiler (GC/Profiler.html)
+
+   * Math (Math.html)
+
+   * Math::DomainError (Math/DomainError.html)
+
+   * NameError (NameError.html)
+
+   * NameError::message (NameError/message.html)
+
+   * ARGF (ARGF.html)
+
+   * ArgumentError (ArgumentError.html)
+
+   * Array (Array.html)
+
+   * BasicObject (BasicObject.html)
+
+   * Bignum (Bignum.html)
+
+   * Binding (Binding.html)
+
+   * Class (Class.html)
+
+   * Comparable (Comparable.html)
+
+   * Complex (Complex.html)
+
+   * Continuation (Continuation.html)
+
+   * Data (Data.html)
+
+   * Dir (Dir.html)
+
+   * EOFError (EOFError.html)
+
+   * EncodingError (EncodingError.html)
+
+   * Enumerable (Enumerable.html)
+
+   * Errno (Errno.html)
+
+   * Exception (Exception.html)
+
+   * FalseClass (FalseClass.html)
+
+   * Fiber (Fiber.html)
+
+   * FiberError (FiberError.html)
+
+   * FileTest (FileTest.html)
+
+   * Fixnum (Fixnum.html)
+
+   * Float (Float.html)
+
+   * FloatDomainError (FloatDomainError.html)
+
+   * Hash (Hash.html)
+
+   * IOError (IOError.html)
+
+   * IndexError (IndexError.html)
+
+   * Integer (Integer.html)
+
+   * Interrupt (Interrupt.html)
+
+   * Kernel (Kernel.html)
+
+   * KeyError (KeyError.html)
+
+   * LoadError (LoadError.html)
+
+   * LocalJumpError (LocalJumpError.html)
+
+   * Marshal (Marshal.html)
+
+   * MatchData (MatchData.html)
+
+   * Method (Method.html)
+
+   * Module (Module.html)
+
+   * Mutex (Mutex.html)
+
+   * NilClass (NilClass.html)
+
+   * NoMemoryError (NoMemoryError.html)
+
+   * NoMethodError (NoMethodError.html)
+
+   * NotImplementedError (NotImplementedError.html)
+
+   * Numeric (Numeric.html)
+
+   * Object (Object.html)
+
+   * ObjectSpace (ObjectSpace.html)
+
+   * Proc (Proc.html)
+
+   * Random (Random.html)
+
+   * Range (Range.html)
+
+   * RangeError (RangeError.html)
+
+   * Rational (Rational.html)
+
+   * Regexp (Regexp.html)
+
+   * RegexpError (RegexpError.html)
+
+   * RuntimeError (RuntimeError.html)
+
+   * ScriptError (ScriptError.html)
+
+   * SecurityError (SecurityError.html)
+
+   * Signal (Signal.html)
+
+   * SignalException (SignalException.html)
+
+   * StandardError (StandardError.html)
+
+   * StopIteration (StopIteration.html)
+
+   * String (String.html)
+
+   * Struct (Struct.html)
+
+   * Symbol (Symbol.html)
+
+   * SyntaxError (SyntaxError.html)
+
+   * SystemCallError (SystemCallError.html)
+
+   * SystemExit (SystemExit.html)
+
+   * SystemStackError (SystemStackError.html)
+
+   * Thread (Thread.html)
+
+   * ThreadError (ThreadError.html)
+
+   * ThreadGroup (ThreadGroup.html)
+
+   * Time (Time.html)
+
+   * TrueClass (TrueClass.html)
+
+   * TypeError (TypeError.html)
+
+   * UnboundMethod (UnboundMethod.html)
+
+   * ZeroDivisionError (ZeroDivisionError.html)
+
+   * fatal (fatal.html)
+
+
+   No matching classes.
+
+1 ARGF
+******
+
+ARGF (ARGF.html) is a stream designed for use in scripts that process
+files given as command-line arguments, or passed in via STDIN.
+
+   The arguments passed to your script are stored in the ARGV Array
+(Array.html), one argument per element.  ARGF (ARGF.html) assumes that
+any arguments that aren’t filenames have been removed from ARGV. For
+example:
+
+$ ruby argf.rb -verbose file1 file2
+ARGV  #=&gt; [&quot;-verbose&quot;, &quot;file1&quot;, &quot;file2&quot;]
+option = ARGV.shift #=&gt; &quot;-verbose&quot;
+ARGV  #=&gt; [&quot;file1&quot;, &quot;file2&quot;]
+
+   You can now use ARGF (ARGF.html) to work with a concatenation of
+each of these named files. For instance,  ARGF.read
+(ARGF.html#method-i-read) will return the contents of file1 followed by
+the contents of file2.
+
+   After a file in ARGV has been read,  ARGF (ARGF.html) removes it
+from the Array (Array.html). Thus, after all files have been readARGV
+will be empty.
+
+   You can manipulate ARGV yourself to control what  ARGF (ARGF.html)
+operates on. If you remove a file fromARGV, it is ignored by ARGF
+(ARGF.html); if you add files to ARGV, they are treated as if they were
+named on the command line. For example:
+
+ARGV.replace [&quot;file1&quot;]
+ARGF.readlines # Returns the contents of file1 as an Array
+ARGV           #=&gt; []
+ARGV.replace [&quot;file2&quot;, &quot;file3&quot;]
+ARGF.read      # Returns the contents of file2 and file3
+
+   If ARGV is empty, ARGF (ARGF.html) acts as if it contained STDIN,
+i.e. the data piped to your script. For example:
+
+$ echo &quot;glark&quot; | ruby -e 'p ARGF.read'
+&quot;glark\n&quot;
+
+1.0.1 Public Instance Methods
+-----------------------------
+
+argv  &rarr; ARGV
+
+   click to toggle source
+
+   Returns the ARGV array, which contains the arguments passed to your
+script, one per element.
+
+   For example:
+
+$ ruby argf.rb -v glark.txt
+ARGF.argv   #=&gt; [&quot;-v&quot;, &quot;glark.txt&quot;]
+
+              `
+static VALUE
+argf_argv(VALUE argf)
+
+    return ARGF.argv;
+'
+
+   binmode  &rarr; ARGF
+
+   click to toggle source
+
+   Puts ARGF (ARGF.html) into binary mode. Once a stream is in binary
+mode, it cannot be reset to non-binary mode. This option has the
+following effects:
+
+   *  Newline conversion is disabled.
+
+   *  Encoding (Encoding.html) conversion is disabled.
+
+   *  Content is treated as ASCII-8BIT.
+
+
+              `
+static VALUE
+argf_binmode_m(VALUE argf)
+
+    ARGF.binmode = 1;
+    next_argv();
+    ARGF_FORWARD(0, 0);
+    rb_io_ascii8bit_binmode(ARGF.current_file);
+    return argf;
+'
+
+   binmode?  &rarr; true or false
+
+   click to toggle source
+
+Returns true if +ARGF+ is being read in binary mode; false otherwise. (To
+enable binary mode use +ARGF.binmode+.
+
+   For example:
+
+ARGF.binmode?  #=&gt; false
+ARGF.binmode
+ARGF.binmode?  #=&gt; true
+
+              `
+static VALUE
+argf_binmode_p(VALUE argf)
+
+    return ARGF.binmode ? Qtrue : Qfalse;
+'
+
+   bytes     |byte| block   &rarr; ARGF
+
+   click to toggle source
+
+   bytes                      &rarr; an_enumerator
+
+   each_byte |byte| block   &rarr; ARGF
+
+   each_byte                  &rarr; an_enumerator
+
+Iterates over each byte of each file in +ARGV+.
+A byte is returned as a +Fixnum+ in the range 0..255.
+This method allows you to treat the files supplied on the command line as
+a single file consisting of the concatenation of each named file. After
+the last byte of the first file has been returned, the first byte of the
+second file is returned. The +ARGF.filename+ method can be used to
+determine the filename of the current byte.
+If no block is given, an enumerator is returned instead.
+
+   For example:
+
+ARGF.bytes.to_a  #=&gt; [35, 32, ... 95, 10]
+
+              `
+static VALUE
+argf_each_byte(VALUE argf)
+
+    RETURN_ENUMERATOR(argf, 0, 0);
+    for (;;)
+        if (!next_argv()) return argf;
+        rb_block_call(ARGF.current_file, rb_intern(&quot;each_byte&quot;), 0, 0, 0, 0);
+        ARGF.next_p = 1;
+
+'
+
+   chars      |char| block   &rarr; ARGF
+
+   click to toggle source
+
+   chars                       &rarr; an_enumerator
+
+   each_char  |char| block   &rarr; ARGF
+
+   each_char                   &rarr; an_enumerator
+
+   Iterates over each character of each file in  ARGF (ARGF.html).
+
+   This method allows you to treat the files supplied on the command
+line as a single file consisting of the concatenation of each named
+file. After the last character of the first file has been returned, the
+first character of the second file is returned. The  ARGF.filename
+(ARGF.html#method-i-filename) method can be used to determine the name
+of the file in which the current character appears.
+
+   If no block is given, an enumerator is returned instead.
+
+              `
+static VALUE
+argf_each_char(VALUE argf)
+
+    RETURN_ENUMERATOR(argf, 0, 0);
+    for (;;)
+        if (!next_argv()) return argf;
+        rb_block_call(ARGF.current_file, rb_intern(&quot;each_char&quot;), 0, 0, 0, 0);
+        ARGF.next_p = 1;
+
+'
+
+   close  &rarr; ARGF
+
+   click to toggle source
+
+Closes the current file and skips to the next in the stream. Trying to
+close a file that has already been closed causes an +IOError+ to be
+raised.
+
+   For example:
+
+$ ruby argf.rb foo bar
+ARGF.filename  #=&gt; &quot;foo&quot;
+ARGF.close
+ARGF.filename  #=&gt; &quot;bar&quot;
+ARGF.close
+ARGF.close     #=&gt; closed stream (IOError)
+
+              `
+static VALUE
+argf_close_m(VALUE argf)
+
+    next_argv();
+    argf_close(ARGF.current_file);
+    if (ARGF.next_p != -1)
+        ARGF.next_p = 1;
+
+    ARGF.lineno = 0;
+    return argf;
+'
+
+   closed?  &rarr; true or false
+
+   click to toggle source
+

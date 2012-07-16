@@ -1,5 +1,5 @@
 (setq eclimd-executable "~/eclipse/eclimd")
-
+(setq eclim-executable "~/eclipse/eclim")
 (require 'eclim)
 
 (setq eclim-auto-save t)
@@ -18,5 +18,6 @@
 ;; add the emacs-eclim source
 (require 'ac-emacs-eclim-source)
 (add-hook 'eclim-mode-hook (lambda () (add-to-list 'ac-sources 'ac-source-emacs-eclim)))
+(setq eclimd-wait-for-process nil)
 
-
+(setq eclimd-port 9091)

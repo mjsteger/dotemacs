@@ -56,7 +56,7 @@
 
 (global-set-key (kbd "C-c C-c C-f") 'rename-file-and-buffer)
 
-(global-set-key (kbd "C-c C-v") 'eshell)
+(global-set-key (kbd "C-c C-v") 'eshell-other-window)
 
 (global-set-key (kbd "C-x f") 'fill-region)
 

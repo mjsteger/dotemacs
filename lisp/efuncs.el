@@ -5,6 +5,7 @@
     (setenv "PATH" path-from-shell)
     (setq exec-path (split-string path-from-shell path-separator))))
 
+
 ;; (defun setenv-from-shell (varname)
 ;;   (setenv varname (replace-regexp-in-string
 ;;                    "[ \t\n]*$"
@@ -155,3 +156,13 @@
 
 (defun check-if-onlinep ()
   )
+(defun eshell-other-window ()
+  "Run eshell in other window"
+  (interactive)
+  (let ((eshell-buffer-name "*eshell pop*"))
+    (switch-to-buffer-other-window
+     (get-buffer-create "*eshell pop*"))
+    (eshell)))
+
+
+

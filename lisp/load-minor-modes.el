@@ -7,7 +7,10 @@
 	       expand-region ; Expands by semantic region
 	       flymake ; On the fly syntax checking
 	       rspec-mode ; Better editing for rspec
+           popwin
 	       ))
+
+(setq display-buffer-function 'popwin:display-buffer) ; Allows \*.*\* buffers to be closed when popped up with C-g
 
 (rvm-use-default)
 
@@ -15,3 +18,5 @@
 
 (projectile-global-mode) ;; to enable in all buffers
 (setq projectile-enable-caching t)
+
+(push '("*eshell pop*" :stick t) popwin:special-display-config)

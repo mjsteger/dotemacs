@@ -173,7 +173,8 @@
   (let ((current-dir default-directory)
         (project-root (projectile-get-project-root)))
     (cd project-root)
-    (shell-command (format "ctags -Re %s" project-root))
+    (message (format "xctags -eR %s" project-root))
+    (shell-command (format "xctags -eR %s" project-root))
     (cd current-dir)
     (visit-tags-table project-root)))
 
