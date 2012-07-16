@@ -1,6 +1,7 @@
 (setq auto-mode-alist  (cons '(".rb$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist  (cons '(".rhtml$" . html-mode) auto-mode-alist))
 
+(require 'ruby-end)
 (require 'rsense)
 (setq rsense-home (expand-file-name "~/dotemacs/site-lisp/rsense-0.3"))
 (add-to-list 'load-path (concat rsense-home "/etc"))
@@ -19,7 +20,6 @@
 (autoload 'inf-ruby-keys "inf-ruby"
   "Set local key defs for inf-ruby in ruby-mode")
 
-(require 'ruby-end)
 
 (defun chomp (str)
       "Chomp leading and tailing whitespace from STR."
