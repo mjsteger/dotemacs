@@ -7,7 +7,6 @@
 ;; Set the line numbers
 (global-linum-mode 1)
 
-
 ;;shows a tree of undos in a seperate buffer. Use C-x u to visualize!
 (require 'undo-tree)
 (global-undo-tree-mode)
@@ -76,3 +75,14 @@
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+(define-minor-mode highlight-trouble-words
+"Minor mode to highlight certain words that are troublesome"
+nil "Assist" nil
+(font-lock-add-keywords nil
+                        '(("\\<\\(FIXME\\|TODO\\|BUG\\)" 1 font-lock-warning-face t))))
+
+(define-global-minor-mode global-highlight-trouble-words highlight-trouble-words
+  (lambda () highlight-trouble-words 1))
+
+(global-highlight-trouble-words)
