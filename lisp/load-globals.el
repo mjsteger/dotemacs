@@ -86,3 +86,13 @@ nil "Assist" nil
   (lambda () highlight-trouble-words 1))
 
 (global-highlight-trouble-words)
+
+
+(defun my-erc-hook (match-type nick message)
+  "Shows a growl notification, when user's nick was mentioned. If the buffer is currently not visible, makes it sticky."
+    (growl
+     (concat "ERC: name mentioned on: " (buffer-name (current-buffer)))
+     message
+     ))
+
+(add-hook 'erc-text-matched-hook 'my-erc-hook)
