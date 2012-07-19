@@ -76,17 +76,12 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
-(define-minor-mode highlight-trouble-words
-"Minor mode to highlight certain words that are troublesome"
-nil "Assist" nil
-(font-lock-add-keywords nil
-                        '(("\\<\\(FIXME\\|TODO\\|BUG\\)" 1 font-lock-warning-face t))))
+(defun highlight-trouble-words ()
+  (interactive)
+  (font-lock-add-keywords nil
+                          '(("\\(FIXME\\|TODO\\|BUG\\)" 1 font-lock-warning-face t))))
 
-(define-global-minor-mode global-highlight-trouble-words highlight-trouble-words
-  (lambda () highlight-trouble-words 1))
-
-(global-highlight-trouble-words)
-
+(add-hook 'find-file-hook 'highlight-trouble-words)
 
 (defun my-erc-hook (match-type nick message)
   "Shows a growl notification, when user's nick was mentioned. If the buffer is currently not visible, makes it sticky."
@@ -94,5 +89,7 @@ nil "Assist" nil
      (concat "ERC: name mentioned on: " (buffer-name (current-buffer)))
      message
      ))
-
 (add-hook 'erc-text-matched-hook 'my-erc-hook)
+
+
+
