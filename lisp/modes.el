@@ -21,4 +21,6 @@
 	       load-modeline ; Reconjigger the modeline to my liking
 	       ;load-moz ; Repl with mozilla
 	       ;load-eclim ; Emacs-eclipse cooperation !!!
+           load-appt ; Tweaks to appt, and custom growl/ring sound
 	       ))
+
