@@ -37,3 +37,9 @@
 [submodule "lisp/languages/ruby-end"]
 	path = lisp/languages/ruby-end
 	url = https://github.com/rejeep/ruby-end.git
+[submodule "site-lisp/yari"]
+	path = site-lisp/yari
+	url = https://github.com/pedz/yari-with-buttons.git
+[submodule "site-lisp/emacs-calfw"]
+	path = site-lisp/emacs-calfw
+	url = https://github.com/kiwanami/emacs-calfw.git
