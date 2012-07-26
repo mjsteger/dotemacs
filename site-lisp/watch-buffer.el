@@ -36,6 +36,7 @@
     ("watch-buffer-elisp" . (watch-buffer-elisp watch-buffer-apply-elisp))
     ("watch-buffer-compile" . (watch-buffer-compile run-compile))
     ("watch-buffer-synchronous" . (watch-buffer-sychronous watch-buffer-synchronous-shell-command))
+    ("watch-buffer-etags" . (watch-buffer-etags watch-buffer-generate-etags))
     )"Assoc list of the tag, interactive command, and command to use to evaluate")
 
 (defvar this-file-argv nil
@@ -53,10 +54,10 @@
       (add-to-watcher (read-from-minibuffer "What command do you want: " ) type)
     (add-to-watcher command type)))
 
-(defmacro watch-buffer-command (tag name)
+(defmacro watch-buffer-command (tag name &optional macro-command)
   `(defun ,name (&optional command)
      (interactive)
-     (general-watch ,tag command)))
+     (general-watch ,tag ,macro-command)))
 
 (defun build-interactive-functions ()
   (mapcar (lambda (arg)
@@ -65,6 +66,11 @@
 (defun watch-buffer-synchronous-shell-command (this-command)
   "Synchronous shell command with the name of the buffer set to *Watch-Process*"
   (shell-command this-command (concat "*Watch-Process-" this-command "*")))
+
+
+(defun watch-buffer-generate-etags (ignored-command)
+  "Generate etags for this buffer"
+  (start-process-shell-command "etags update" nil "xctags -eR ."))
 
 (defun watch-buffer-async-shell-command (this-command)
   "Async-shell-command with the name of the buffer set to *Watch-Process"
@@ -86,7 +92,7 @@
 
 (defun apply-watch-buffer-command (file-alist)
   (let ((command-to-apply (caddr (assoc (car file-alist) watch-buffer-types))))
-    (print (cdr file-alist))
+    (print file-alist)
     (mapc (lambda (x) (eval `(,command-to-apply (car x)))) (cdr file-alist))))
 
 (defun unwatch-buffer ()
@@ -100,6 +106,8 @@
 
 (add-after-save-hook)
 (build-interactive-functions)
+;; overrides the definition in the table to make it not ask questions
+(watch-buffer-command "watch-buffer-etags" watch-buffer-etags "")
 
 (defcustom simple-compile-modes-alist
   '((python-mode . ("python " kill-compilation))

@@ -11,8 +11,10 @@
 (add-hook 'ruby-mode-hook
           (lambda ()
 	    (ruby-end-mode)
-        (setq ac-sources (cons 'ac-source-rsense-constant (cons 'ac-source-rsense-method ac-sources)))
+        (setq ac-sources '(ac-source-rsense-method ac-source-words-in-buffer))
+        ;(setq ac-sources (cons 'ac-source-rsense-constant (cons 'ac-source-rsense-method ac-sources)))
 	    ))
+
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 ;(define-key ruby-mode-map (kbd "<return>") 'newline-and-indent)
 (define-key ruby-mode-map (kbd "M-.") 'rsense-jump-to-definition)
@@ -39,5 +41,11 @@
 	  (switch-to-buffer "*Shell Command Output*")
 	  (browse-url (chomp (buffer-string)))
 	  )))
-
 (define-key ruby-mode-map (kbd "C-c h") 'look-up-ruby-function-at-point)
+
+(add-hook 'ruby-mode-hook
+          #'(lambda ()
+              (push '(?` . ?`)
+                    (getf autopair-extra-pairs :code))
+              (push '(?/ . ?/)
+                    (getf autopair-extra-pairs :code))))
