@@ -17,7 +17,6 @@
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 ;(define-key ruby-mode-map (kbd "<return>") 'newline-and-indent)
-(define-key ruby-mode-map (kbd "M-.") 'rsense-jump-to-definition)
 (define-key ruby-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
 (autoload 'run-ruby "inf-ruby"
   "Run an inferior Ruby process")
