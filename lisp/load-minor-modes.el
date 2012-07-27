@@ -11,6 +11,7 @@
            jabber-autoloads
            rinari
            mumamo-fun
+           expand-region
 	       ))
 
 
@@ -28,6 +29,8 @@
      (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-html-mumamo))
 
 (push '("*eshell pop*" :stick t) popwin:special-display-config)
+(push '("*anything*" :stick t) popwin:special-display-config)
+(push '("\*yari.*"  :stick t :regexp t) popwin:special-display-config)
 
 (require 'jabber-autoloads)
 (global-set-key (kbd "C-c C-l") 'jabber-switch-to-roster-buffer)
@@ -61,3 +64,6 @@
       (growl (format "%s" (jabber-jid-displayname from))
              text "jabber-from-unknown"))))
 (add-hook 'jabber-alert-message-hooks 'pg-jabber-growl-notify)
+(global-set-key (kbd "C-@") 'er/expand-region)
+
+(add-hook 'jabber-chat-mode-hook 'flyspell-mode)
