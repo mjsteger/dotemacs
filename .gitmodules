@@ -43,3 +43,9 @@
 [submodule "site-lisp/emacs-calfw"]
 	path = site-lisp/emacs-calfw
 	url = https://github.com/kiwanami/emacs-calfw.git
+[submodule "site-lisp/wrap-region"]
+	path = site-lisp/wrap-region
+	url = https://github.com/rejeep/wrap-region.git
+[submodule "site-lisp/switch-window"]
+	path = site-lisp/switch-window
+	url = https://github.com/mjsteger/dotemacs
