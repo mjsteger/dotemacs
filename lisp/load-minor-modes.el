@@ -9,8 +9,8 @@
 	       rspec-mode ; Better editing for rspec
            popwin
            jabber-autoloads
-           rinari
-           mumamo-fun
+           ;rinari
+           ;mumamo-fun
            expand-region
 	       ))
 
