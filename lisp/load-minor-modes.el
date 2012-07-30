@@ -33,7 +33,6 @@
 (push '("\*yari.*"  :stick t :regexp t) popwin:special-display-config)
 (push '("\*.*\*" :stick t :regexp t) popwin:special-display-config)
 
-(require 'jabber-autoloads)
 (global-set-key (kbd "C-c C-l") 'jabber-switch-to-roster-buffer)
 
 
