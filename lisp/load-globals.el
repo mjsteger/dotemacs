@@ -91,5 +91,12 @@
      ))
 (add-hook 'erc-text-matched-hook 'my-erc-hook)
 
+(setq initial-scratch-message ";; Do you wrestle with dreams?
+;; Do you contend with shadows?
+;; Do you move in a kind of sleep?
 
-
+;; Time has slipped away
+;; Your life is stolen
+;; You tarried with trifles
+;; Victim of your folly
+")
