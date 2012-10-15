@@ -76,3 +76,9 @@
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+(defadvice server-edit (after pop-back-to-edit-source () )
+  "Bounce back to whatever sent us the edit"
+  (lower-frame))
+
+(ad-activate 'server-edit)
