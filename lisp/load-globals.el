@@ -7,7 +7,6 @@
 ;; Set the line numbers
 (global-linum-mode 1)
 
-
 ;;shows a tree of undos in a seperate buffer. Use C-x u to visualize!
 (require 'undo-tree)
 (global-undo-tree-mode)
@@ -77,8 +76,34 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+
 (defadvice server-edit (after pop-back-to-edit-source () )
   "Bounce back to whatever sent us the edit"
   (lower-frame))
 
 (ad-activate 'server-edit)
+
+(defun highlight-trouble-words ()
+  (interactive)
+  (font-lock-add-keywords nil
+                          '(("\\(FIXME\\|TODO\\|BUG\\)" 1 font-lock-warning-face t))))
+
+(add-hook 'find-file-hook 'highlight-trouble-words)
+
+(defun my-erc-hook (match-type nick message)
+  "Shows a growl notification, when user's nick was mentioned. If the buffer is currently not visible, makes it sticky."
+    (growl
+     (concat "ERC: name mentioned on: " (buffer-name (current-buffer)))
+     message
+     ))
+(add-hook 'erc-text-matched-hook 'my-erc-hook)
+
+(setq initial-scratch-message ";; Do you wrestle with dreams?
+;; Do you contend with shadows?
+;; Do you move in a kind of sleep?
+
+;; Time has slipped away
+;; Your life is stolen
+;; You tarried with trifles
+;; Victim of your folly
+")
