@@ -76,6 +76,13 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+
+(defadvice server-edit (after pop-back-to-edit-source () )
+  "Bounce back to whatever sent us the edit"
+  (lower-frame))
+
+(ad-activate 'server-edit)
+
 (defun highlight-trouble-words ()
   (interactive)
   (font-lock-add-keywords nil
@@ -91,5 +98,12 @@
      ))
 (add-hook 'erc-text-matched-hook 'my-erc-hook)
 
+(setq initial-scratch-message ";; Do you wrestle with dreams?
+;; Do you contend with shadows?
+;; Do you move in a kind of sleep?
 
-
+;; Time has slipped away
+;; Your life is stolen
+;; You tarried with trifles
+;; Victim of your folly
+")
