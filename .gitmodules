@@ -46,8 +46,6 @@
 [submodule "site-lisp/wrap-region"]
 	path = site-lisp/wrap-region
 	url = https://github.com/rejeep/wrap-region.git
-[submodule "site-lisp/switch-window"]
-	path = site-lisp/switch-window
 [submodule "site-lisp/rudel"]
 	path = site-lisp/rudel
 	url = https://github.com/scymtym/rudel.git
