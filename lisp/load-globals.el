@@ -41,7 +41,6 @@
 
 (setq show-paren-style 'parenthesis)
 
-                                        ; (global-set-key (kbd "<return>") 'newline-and-indent)
 
 (setq ispell-program-name "aspell" ; use aspell instead of ispell
       ispell-extra-args '("--sug-mode=ultra"))
@@ -85,11 +84,12 @@
 
 (defun my-erc-hook (match-type nick message)
   "Shows a growl notification, when user's nick was mentioned. If the buffer is currently not visible, makes it sticky."
-    (growl
-     (concat "ERC: name mentioned on: " (buffer-name (current-buffer)))
-     message
-     ))
+  (cond
+   (equal system-type "darwin")
+   (growl
+    (concat "ERC: name mentioned on: " (buffer-name (current-buffer)))
+    message
+    ))
+  ((t) (message (concat "ERC: name mentioned on: " (buffer-name (current-buffer))
+                        message))))
 (add-hook 'erc-text-matched-hook 'my-erc-hook)
-
-
-
