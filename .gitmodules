@@ -46,6 +46,19 @@
 [submodule "site-lisp/wrap-region"]
 	path = site-lisp/wrap-region
 	url = https://github.com/rejeep/wrap-region.git
-[submodule "site-lisp/switch-window"]
-	path = site-lisp/switch-window
-	url = https://github.com/mjsteger/dotemacs
+[submodule "site-lisp/rudel"]
+	path = site-lisp/rudel
+	url = https://github.com/scymtym/rudel.git
+[submodule "site-lisp/rinari/util/jump"]
+	path = site-lisp/rinari/util/jump
+	url = https://github.com/eschulte/jump.el.git
+[submodule "site-lisp/rinari/util/test/ert"]
+	path = site-lisp/rinari/util/test/ert
+	url = https://github.com/nex3/ert.git
+[submodule "site-lisp/rinari/util/inf-ruby"]
+	path = site-lisp/rinari/util/inf-ruby
+	url = https://github.com/nonsequitur/inf-ruby.git
+[submodule "site-lisp/multiple-cursors"]
+	path = site-lisp/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
+

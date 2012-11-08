@@ -12,6 +12,7 @@
            ;rinari
            ;mumamo-fun
            expand-region
+           switch-window
 	       ))
 
 
