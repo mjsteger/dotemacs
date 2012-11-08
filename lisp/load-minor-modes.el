@@ -1,5 +1,5 @@
 (require-all '(
-	       rvm ; Supports ruby version manager in emacs
+	       ;rvm ; Supports ruby version manager in emacs
 	       helm-config ; Allows for quicksilver autocompletion
 	       jump-char ; Allows jumping ahead characters, shortcut for C-s
 	       magit ; Allows for easy interaction with git in emacs
@@ -17,7 +17,7 @@
 
 (setq display-buffer-function 'popwin:display-buffer) ; Allows \*.*\* buffers to be closed when popped up with C-g
 
-(rvm-use-default)
+;(rvm-use-default)
 
 (winner-mode) ; Allow you go back and forward in buffer setups
 
