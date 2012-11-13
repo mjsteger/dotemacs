@@ -4,21 +4,31 @@
 
 (defvar home (expand-file-name "~/"))
 
+(defvar common-notes-prefix "Dropbox/national/")
+
 (setq org-log-done t)
+(setq org-tickler-file (concat home common-notes-prefix "tickler.org"))
+(setq org-todo-file (concat home common-notes-prefix "todo.org"))
+(setq org-notes-file (concat home common-notes-prefix "notes.org"))
 
-(setq org-agenda-files (list (concat home "/org/home.org")
-			     (concat home "/org/gtd.org")
-			     (concat home "/org/work.org")
-			     (concat home "/org/notes.org")
-			     (concat home "/org/refile.org")
-			     ))
+(setq org-agenda-files (list
+			     org-tickler-file
+			     org-todo-file
+                 org-notes-file
+                 ))
 
+;; (defadvice org-capture-bounce-to
+;;   (after org-capture)
+;;   "Bounce to the capture buffer"
+;;   (other-window 1))
+
+;; (ad-activate 'org-capture-bounce-to)
 
 (setq org-capture-templates
       '(
-	("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+	("t" "Todo" entry (file+headline org-todo-file "Tasks")
 	 "* TODO %?\n  %i\n ")
-	("n" "Note" entry (file "~/org/notes.org")
+	("n" "Note" entry (file org-notes-file)
 	 "* %? :NOTE:\n%U\n  %i" :clock-in t :clock-resume t)
 	("a" "Interesting" entry (file "~/org/notes.org")
 	 "* %? :NOTE:\n%U\n  %i" :clock-in t :clock-resume t)
