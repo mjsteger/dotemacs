@@ -69,3 +69,5 @@
 (global-set-key (kbd "M-]") 'winner-redo)
 
 (global-set-key (kbd "M-e") 'yas/expand)
+(global-set-key (kbd "C-#") 'mc/mark-all-in-region)
+(global-set-key (kbd "M-%") 'query-replace-regexp)
