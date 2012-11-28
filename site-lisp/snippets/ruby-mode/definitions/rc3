@@ -1,0 +1,12 @@
+# name: record_class 3
+# key: rc3
+# expand-env: ((yas/indent-line 'fixed))
+# --
+class $1
+  attr_reader :$2, :$3, :$4
+  def initialize($2, $3, $4)
+    @$2 = $2
+    @$3 = $3
+    @$4 = $4
+  end
+end
