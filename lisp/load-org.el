@@ -7,9 +7,15 @@
 (defvar common-notes-prefix "Dropbox/national/")
 
 (setq org-log-done t)
-(setq org-tickler-file (concat home common-notes-prefix "tickler.org"))
-(setq org-todo-file (concat home common-notes-prefix "todo.org"))
-(setq org-notes-file (concat home common-notes-prefix "notes.org"))
+
+(defun make-org-name (name)
+  (concat home common-notes-prefix name))
+(make-org-files)
+(mapcar (lambda x))
+(setq org-tickler-file (make-org-name "tickler.org")
+      org-todo-file (make-org-name "todo.org")
+      org-notes-file (make-org-name "notes.org")
+      org-interesting-file (make-org-name "interesting.org"))
 
 (setq org-agenda-files (list
 			     org-tickler-file
@@ -30,7 +36,7 @@
 	 "* TODO %?\n  %i\n ")
 	("n" "Note" entry (file org-notes-file)
 	 "* %? :NOTE:\n%U\n  %i" :clock-in t :clock-resume t)
-	("a" "Interesting" entry (file "~/org/notes.org")
+	("a" "Interesting" entry (file org-interesting-file)
 	 "* %? :NOTE:\n%U\n  %i" :clock-in t :clock-resume t)
 	("e" "Emacs" entry (file "~/org/emacs.org")
 	 "* TODO %?\n  %i\n " )
