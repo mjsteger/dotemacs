@@ -110,4 +110,9 @@
 ;; Your life is stolen
 ;; You tarried with trifles
 ;; Victim of your folly
+
+;; He’s the best of us.
+;; The best of our best, the best that each of us will ever build or ever love.
+;; So pray for this Guardian of our growth and choose him well, for if he be not truly blessed, then our designs are surely frivolous and our future but a tragic waste of hope.
+;; Bless our best and adore for he doth bear our measure to the Cosmos.
 ")

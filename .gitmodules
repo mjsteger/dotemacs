@@ -62,3 +62,9 @@
 	path = site-lisp/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git
 
+[submodule "site-lisp/zossima"]
+	path = site-lisp/zossima
+	url = https://github.com/technomancy/zossima.git
+[submodule "site-lisp/inf-ruby"]
+	path = site-lisp/inf-ruby
+	url = https://github.com/nonsequitur/inf-ruby.git

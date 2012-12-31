@@ -3,9 +3,10 @@
 
 (require-all '(
 	       rainbow-delimiters
-	       tango-2-theme-1.0.0
+	       ;tango-2-theme-1.0.0
 	       ))
 
+(load-theme 'deeper-blue)
 ; Create a global mode for rainbow-mode
 (define-global-minor-mode global-rainbow-mode rainbow-delimiters-mode
  (lambda () (rainbow-delimiters-mode 1)))

@@ -6,12 +6,13 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 
+
 ;; (defun setenv-from-shell (varname)
 ;;   (setenv varname (replace-regexp-in-string
 ;;                    "[ \t\n]*$"
 ;;                    ""
 ;;                    (shell-command-to-string (concat "$SHELL --login -i -c 'echo $" varname "'")))))
-;; (setenv-from-shell "PYTHONPATH")
+;; ;; (setenv-from-shell "PYTHONPATH")
 ;; (setenv-from-shell "PATH")
 
 (add-hook 'eshell-mode-hook 'set-exec-path-from-shell-PATH)
@@ -70,7 +71,6 @@
 
 ;; Whitespace fucks up poor version control, so lets do away with it
 (add-hook 'before-save-hook (lambda () (delete-trailing-whitespace)))
-
 
 (defun toggle-current-window-dedication ()
  (interactive)

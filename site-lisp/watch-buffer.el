@@ -32,7 +32,7 @@
 
 (defcustom watch-buffer-types
   '(("watch-buffer" . (watch-buffer watch-buffer-async-shell-command))
-    ("watch-buffer-silently" . (watch-buffer-silently call-process-shell-command))
+    ("watch-buffer-silently" . (watch-buffer-silent call-process-shell-command))
     ("watch-buffer-elisp" . (watch-buffer-elisp watch-buffer-apply-elisp))
     ("watch-buffer-compile" . (watch-buffer-compile run-compile))
     ("watch-buffer-synchronous" . (watch-buffer-sychronous watch-buffer-synchronous-shell-command))
@@ -67,10 +67,12 @@
   "Synchronous shell command with the name of the buffer set to *Watch-Process*"
   (shell-command this-command (concat "*Watch-Process-" this-command "*")))
 
+(defun watch-buffer-silent (this-command)
+  (call-process-shell-command this-command nil (concat "*Watch-Process-" this-command "*")))
 
 (defun watch-buffer-generate-etags (ignored-command)
   "Generate etags for this buffer"
-  (start-process-shell-command "etags update" nil "xctags -eR ."))
+  (start-process-shell-command "etags update" nil "ctags -eR ."))
 
 (defun watch-buffer-async-shell-command (this-command)
   "Async-shell-command with the name of the buffer set to *Watch-Process"
